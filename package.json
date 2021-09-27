@@ -1,0 +1,26 @@
+{
+  "name": "readme_generator",
+  "version": "1.0.0",
+  "description": "Command-line based readme.md generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brian Baker",
+  "license": "AGPL-3.0-or-later",
+  "dependencies": {
+    "inquirer": "^6.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baker-ling/readme_generator.git"
+  },
+  "keywords": [
+    "readme",
+    "markdown"
+  ],
+  "bugs": {
+    "url": "https://github.com/baker-ling/readme_generator/issues"
+  },
+  "homepage": "https://github.com/baker-ling/readme_generator#readme"
+}
