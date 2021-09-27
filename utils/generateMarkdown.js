@@ -62,12 +62,12 @@ function renderLicenseLink(license, useLocalLicenseFile = true) {
 
 // Returns the license section of a README.md
 // If there is no license, returns an empty string
-function renderLicenseSection(license) {
+function renderLicenseSection(license, useLocalLicenseFile) {
   if (!license) return '';
   return `
 ## License
 
-This application is distributed under the terms of ${renderLicenseLink(license)}.
+This application is distributed under the terms of ${renderLicenseLink(license, useLocalLicenseFile)}.
 `;
 }
 
@@ -132,18 +132,17 @@ ${data.install}
 
 ${data.usage}
 
-${data.contributing ?
+` +
+(data.contributing ?
 `## Contributing
 
 ${data.contributing}
-` : ''}
-${data.tests ? 
+
+` : '') + (data.tests ? 
 `## Tests
 
 ${data.tests}
-` : ''}
-${renderQuestionsSection(data)}
-${renderLicenseSection(data.license)}`;
+` : '') + renderQuestionsSection(data) + renderLicenseSection(data.license, data.license_link);
 }
 
 module.exports = generateMarkdown;

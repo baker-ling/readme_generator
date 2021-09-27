@@ -123,6 +123,11 @@ const questions = [
           license => ({value:license.spdx_id, name: license.name, short: license.spdx_id}))
     },
     {
+      name: 'license_link',
+      message: 'Make link to local license file?',
+      default: true 
+    },
+    {
         name: 'description',
         type: 'input',
         message: 'Project Description',
@@ -166,7 +171,14 @@ function init() {
   inquirer.prompt(questions)
   .then(answers => {
     const markdown = generateMarkdown(answers);
-    writeToFile('README.md', markdown);
+    fs.mkdir('output', {recursive: true}, (err) => {
+      if (err) {
+        console.log(err);
+      } else {
+        writeToFile('output/README.md', markdown);
+      }
+    })
+    
   })
 }
 
