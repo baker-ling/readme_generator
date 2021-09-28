@@ -121,9 +121,7 @@ function generateMarkdown(data) {
 ## Description
 
 ${data.description}
-
 ${renderTableOfContents(data)}
-
 ## Installation
 
 ${data.install}
