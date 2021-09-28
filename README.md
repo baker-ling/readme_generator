@@ -36,6 +36,8 @@ A few of the questions merit additional explanation:
 
 3. Email, GitHub Username, Contributing Guidelines, and Tests questions are optional. Leave these blank if you want to leave them out of your README file.
 
+### Output Screenshots
+
 Example output from input in screenshot above:
 
 ![Screenshot of README.md generated](screen_captures/demo_output_screenshot.png)
@@ -44,10 +46,13 @@ Example output rendered in the browser:
 
 ![Screenshot of README.md generated rendered in browser with markdown plugin](screen_captures/demo_output_browser_screenshot.png)
 
+### Video Walkthrough
+
+I have created a video walkthrough demonstrating how to use this app [here](screen_captures/demo.mp4).
+
 ## Contributing
 
 Please contact the owner of this repo if you are interested in contributing.
-
 
 ## Questions
 
