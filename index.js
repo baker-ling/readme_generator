@@ -125,6 +125,7 @@ const questions = [
     {
       name: 'license_link',
       message: 'Make link to local license file?',
+      type: 'confirm',
       default: true 
     },
     {
