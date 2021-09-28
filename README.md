@@ -14,7 +14,9 @@ This is a CLI-based generator of markdown README files for programming projects.
 
 ## Installation
 
-This program requires node.js to use. To install, open the terminal in the directory where you want to install the program and type `npm install GITHUB_REPO_LINK`.
+This program requires node.js. To install, open the terminal in the directory where you want to install the program and type the following.
+
+```npm install https://github.com/baker-ling/readme_generator```
 
 ## Usage
 
